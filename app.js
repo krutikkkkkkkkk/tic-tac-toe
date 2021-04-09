@@ -123,6 +123,7 @@ if(a != null && b != null && c!= null && d != null && e != null && f != null && 
         if(c == 0){
             document.getElementById('winner').innerHTML = "<div class='alert alert-success span' role='alert'>Player 2 Won the Match</div>"
             reset()
+            
         }
      }
 
