@@ -4,6 +4,7 @@ function reset(){
         history.go(0);
       }, 5000);
 }
+
 ///Check Player is Selected or Not
 function isSelected(){
     alert("Select Any Player");
@@ -142,6 +143,7 @@ if(a != null && b != null && c!= null && d != null && e != null && f != null && 
 
 }
 
+
 ///Play X
 function playX(){
 
@@ -196,4 +198,3 @@ function playO(){
     player2.setAttributeNode(style2);
     whoIsTheWinner()
 }
-
