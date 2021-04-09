@@ -18,6 +18,8 @@ function play1(clicked_id){
     document.getElementById(id).setAttribute("data-value", "1")
     whoIsTheWinner()
     playO()
+    document.getElementById("player1").disabled = true;
+    document.getElementById("player2").disabled = false;  
 } 
 function play2(clicked_id){
     let id1  = clicked_id;
@@ -25,6 +27,8 @@ function play2(clicked_id){
     document.getElementById(id1).setAttribute("data-value", "0")
     whoIsTheWinner()
     playX()
+    document.getElementById("player2").disabled = true;  
+    document.getElementById("player1").disabled = false;  
 } 
     </script>
   
