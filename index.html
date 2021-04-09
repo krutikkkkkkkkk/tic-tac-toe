@@ -19,6 +19,9 @@ function play1(clicked_id){
     whoIsTheWinner()
     playO()
     blockPlayerX()
+     ///Block Overwrite
+    document.getElementById(id).setAttribute("onclick", null)
+    document.getElementById(id).setAttribute("class", "cube cd")
 } 
 function play2(clicked_id){
     let id1  = clicked_id;
@@ -27,6 +30,11 @@ function play2(clicked_id){
     whoIsTheWinner()
     playX()
     blockPlayerO()
+    document.getElementById(id1).disabled = true;
+    ///Block Overwrite
+    document.getElementById(id1).setAttribute("onclick", null)
+    document.getElementById(id).setAttribute("class", "cube cd")
+
 } 
     </script>
   

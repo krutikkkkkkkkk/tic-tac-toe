@@ -1,11 +1,15 @@
+///Reset
 function reset(){
     setTimeout(function () {
         history.go(0);
       }, 5000);
 }
+///Check Player is Selected or Not
 function isSelected(){
     alert("Select Any Player");
 }
+
+///Block Player who made the previous move
 function blockPlayerX(){
     document.getElementById("player1").disabled = true;
     document.getElementById("player2").disabled = false;
@@ -13,8 +17,8 @@ function blockPlayerX(){
 function blockPlayerO(){
     document.getElementById("player1").disabled = false;    
     document.getElementById("player2").disabled = true;  
-     
 }
+////Check who is the Winner
 function whoIsTheWinner(){
      let a = document.getElementById('0').getAttribute('data-value');
      let b = document.getElementById('1').getAttribute('data-value');
@@ -138,6 +142,7 @@ if(a != null && b != null && c!= null && d != null && e != null && f != null && 
 
 }
 
+///Play X
 function playX(){
 
     document.getElementsByTagName('div')[1].setAttribute("onclick", "play1(this.id)")
@@ -164,7 +169,7 @@ function playX(){
     whoIsTheWinner()
 }
 
-
+///Play O
 function playO(){
 
     document.getElementsByTagName('div')[1].setAttribute("onclick", "play2(this.id)")

@@ -22,6 +22,11 @@ main {
     align-items: center;
     font-size: 30px;
     font-weight: bold;
+    cursor: pointer;
+}
+/*Disable cursor*/
+.cd {
+    cursor: not-allowed;
 }
 .players {
     background-color: #222;
