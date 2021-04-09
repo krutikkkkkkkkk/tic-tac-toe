@@ -6,6 +6,15 @@ function reset(){
 function isSelected(){
     alert("Select Any Player");
 }
+function blockPlayerX(){
+    document.getElementById("player1").disabled = true;
+    document.getElementById("player2").disabled = false;
+}
+function blockPlayerO(){
+    document.getElementById("player1").disabled = false;    
+    document.getElementById("player2").disabled = true;  
+     
+}
 function whoIsTheWinner(){
      let a = document.getElementById('0').getAttribute('data-value');
      let b = document.getElementById('1').getAttribute('data-value');
